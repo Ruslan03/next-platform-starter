@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactCompiler: true,
-  
+  basePath: '/blog',
+
   redirects() {
     return [
       {
@@ -26,7 +27,7 @@ const nextConfig = {
       },
     ];
   },
-  
+
   rewrites() {
     return [
       {
